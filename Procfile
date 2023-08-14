@@ -1,1 +1,1 @@
-web: cd ./radioelektroninca/ && python manage.py migrate && python manage.py collectstatic --noinput && gunicorn gaclient.wsgi
+web:  python manage.py migrate && python manage.py collectstatic --noinput && gunicorn gaclient.wsgi
