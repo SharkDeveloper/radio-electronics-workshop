@@ -1,1 +1,1 @@
-web:  python manage.py migrate && python manage.py collectstatic --noinput && gunicorn radioelektroninca.wsgi
+web:  gunicorn radioelektroninca.wsgi
