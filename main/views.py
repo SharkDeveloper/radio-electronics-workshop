@@ -1,7 +1,6 @@
 from django.shortcuts import render, redirect
 from .forms import OrderForm, FeedbackForm
 from .models import Feedback
-from django.views.decorators.csrf import csrf_protect
 
 # Create your views here.
 
@@ -20,6 +19,7 @@ def contact_us(request):
     context = {
         'form':form
     }
+
     return render(request,"main/contact_us.html",context)
 
 def reviews(request):
