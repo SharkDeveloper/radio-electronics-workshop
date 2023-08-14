@@ -28,6 +28,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
 
+# Разрешение для csrf
+CSRF_TRUSTED_ORIGINS = ["https://radio-electronics-workshop-production.up.railway.app0"]
 
 # Application definition
 
