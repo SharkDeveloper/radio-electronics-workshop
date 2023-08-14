@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect
 from .forms import OrderForm, FeedbackForm
 from .models import Feedback
+from django.views.decorators.csrf import csrf_protect
 
 # Create your views here.
 
@@ -10,6 +11,7 @@ def index(request):
 def about(request):
     return render(request,'main/about.html')
 
+@csrf_protect
 def contact_us(request):
     form = OrderForm(request.POST)
     if request.method == "POST":
@@ -21,6 +23,7 @@ def contact_us(request):
     }
     return render(request,"main/contact_us.html",context)
 
+@csrf_protect
 def reviews(request):
     form = FeedbackForm(request.POST)
     last_three_feedback = Feedback.objects.all().order_by('-id')[:3]
