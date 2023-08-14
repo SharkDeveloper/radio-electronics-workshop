@@ -53,6 +53,9 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'radioelektroninca.urls'
 
+#обработка ошибок CSRF
+CSRF_FAILURE_VIEW = 'django.views.csrf.csrf_failure'
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
