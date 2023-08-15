@@ -1,1 +1,1 @@
-web:  python manage.py runserver && gunicorn radioelektroninca.wsgi
+web:  gunicorn radioelektroninca.wsgi
