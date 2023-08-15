@@ -26,10 +26,10 @@ SECRET_KEY = 'django-insecure-3-gnv599z#4kmal6p7vj2b0w_7t+-a)wf$1j_dd-(n3!)8kdw2
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = ["*","https://radio-electronics-workshop-production.up.railway.app"]
 
 # Разрешение для csrf
-CSRF_TRUSTED_ORIGINS = ["https://radio-electronics-workshop-production.up.railway.app/admin","radio-electronics-workshop-production.up.railway.app"]
+CSRF_TRUSTED_ORIGINS = ["https://radio-electronics-workshop-production.up.railway.app","https://radio-electronics-workshop-production.up.railway.app/admin","radio-electronics-workshop-production.up.railway.app"]
 
 # Application definition
 
