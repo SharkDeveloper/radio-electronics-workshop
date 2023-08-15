@@ -29,7 +29,7 @@ DEBUG = True
 ALLOWED_HOSTS = ["*","https://radio-electronics-workshop-production.up.railway.app"]
 
 # Разрешение для csrf
-CSRF_TRUSTED_ORIGINS = ["https://radio-electronics-workshop-production.up.railway.app","https://radio-electronics-workshop-production.up.railway.app/admin","radio-electronics-workshop-production.up.railway.app"]
+CSRF_TRUSTED_ORIGINS = ["https://radio-electronics-workshop-production.up.railway.app"]
 
 # Application definition
 
@@ -124,9 +124,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static'),
-]
+
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
